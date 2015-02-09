@@ -17,11 +17,11 @@
 
 
 //MMD module configuration
-#define MMD_MAX_CHARS		30
-#define MMD_MAX_SEGMENTS	4
+#define MMD_MAX_CHARS		8
+#define MMD_MAX_SEGMENTS	3
 #define MMD_MAX_ADDRESS		128
 //#define __MMD_STATIC__
-#define MMD_TEST
+//#define MMD_TEST
 
 
 /*----------------------------------------

@@ -13,7 +13,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File001]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\board.o
 Folder=Intermediary
@@ -26,7 +26,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File002]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\heartBeat.o
 Folder=Intermediary
@@ -39,7 +39,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File003]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\interruptvector.o
 Folder=Intermediary
@@ -52,7 +52,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File004]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\main.o
 Folder=Intermediary
@@ -65,7 +65,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File005]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\MMD.o
 Folder=Intermediary
@@ -78,7 +78,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File006]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\timer.o
 Folder=Intermediary
@@ -91,7 +91,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File007]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbfunccoils.o
 Folder=Intermediary
@@ -104,7 +104,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File008]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbfuncdisc.o
 Folder=Intermediary
@@ -117,7 +117,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File009]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbfuncholding.o
 Folder=Intermediary
@@ -130,7 +130,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File010]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbfuncinput.o
 Folder=Intermediary
@@ -143,7 +143,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File011]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbfuncother.o
 Folder=Intermediary
@@ -156,7 +156,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File012]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbutils.o
 Folder=Intermediary
@@ -169,7 +169,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File013]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mb.o
 Folder=Intermediary
@@ -182,7 +182,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File014]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\portevent.o
 Folder=Intermediary
@@ -195,7 +195,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File015]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\portserial.o
 Folder=Intermediary
@@ -208,7 +208,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File016]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\porttimer.o
 Folder=Intermediary
@@ -221,7 +221,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File017]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbcrc.o
 Folder=Intermediary
@@ -234,7 +234,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File018]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\obj\mbrtu.o
 Folder=Intermediary
@@ -247,7 +247,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=-O-
 TraceCmdString=
-DebugOptions=-D__DEBUG
+DebugOptions=
 [File019]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\output\MMD_PIC18F8722.cof
 Folder=Output
@@ -260,7 +260,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=/m"$(BINDIR_)$(TARGETBASE).map" /w /o"$(BINDIR_)$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [File020]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\output\MMD_PIC18F8722.hex
 Folder=Output
@@ -273,7 +273,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=/m"$(BINDIR_)$(TARGETBASE).map" /w /o"$(BINDIR_)$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [File021]
 Location=C:\Users\JO\Desktop\ongoing pojects\SourishTechnologies\MMD_18F8722_wtihMB\output\MMD_PIC18F8722.map
 Folder=Output
@@ -286,7 +286,7 @@ SOLK=<src>|source\app.c|source\board.c|source\heartBeat.c|source\interruptvector
 SuiteArgsString=
 ToolArgsString=/m"$(BINDIR_)$(TARGETBASE).map" /w /o"$(BINDIR_)$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [TOOL_LOC_STAMPS]
 tool_loc{96C98149-AA1B-4CF9-B967-FAE79CAB663C}=C:\Program Files\Microchip\mplabc18\v3.46\bin\mplink.exe
 tool_loc{E56A1C86-9D32-4DF6-8C34-FE0388B1B644}=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe

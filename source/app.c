@@ -25,6 +25,7 @@ typedef struct _APP
 #pragma idata APP_DATA
 APP app = {{0},0};
 MMD_Config mmdConfig = {0};
+UINT8 data[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456";//"01 IDEONICS IDEAS & ELECTRONICS S";
 #pragma idata
 
 
@@ -41,6 +42,51 @@ void APP_init(void)
 	eStatus = eMBInit( MB_RTU, ( UCHAR )saddress, 0, sbaudrate, MB_PAR_NONE);
 	eStatus = eMBEnable(  );	/* Enable the Modbus Protocol Stack. */
 
+	for(i = 0; i < 33; i++)
+	{
+		app.valueBuffer[i] = data[i];
+	}
+	MMD_clearSegment(0);
+	mmdConfig.startAddress = 0;
+	mmdConfig.length = 8;
+	mmdConfig.symbolCount = 8;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = app.valueBuffer;
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 0 , &mmdConfig);
+
+	MMD_clearSegment(1);
+	mmdConfig.startAddress = 8;
+	mmdConfig.length = MMD_MAX_CHARS;
+	mmdConfig.symbolCount = MMD_MAX_CHARS;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = (app.valueBuffer+8);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 1 , &mmdConfig);
+
+	MMD_clearSegment(2);
+	mmdConfig.startAddress = 16;
+	mmdConfig.length = MMD_MAX_CHARS;
+	mmdConfig.symbolCount = MMD_MAX_CHARS;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = (app.valueBuffer+16);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 2 , &mmdConfig);
+/*
+
+	MMD_clearSegment(3);
+	mmdConfig.startAddress = 21;
+	mmdConfig.length = 7;
+	mmdConfig.symbolCount = 7;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = (app.valueBuffer+21);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 3 , &mmdConfig);
+
+	MMD_clearSegment(4);
+	mmdConfig.startAddress = 28;
+	mmdConfig.length = 5;
+	mmdConfig.symbolCount = 5;
+	mmdConfig.symbolBuffer = (app.valueBuffer+28);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 4 , &mmdConfig);
+*/
 }
 
 void APP_task(void)
@@ -136,7 +182,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 		starting_add++;
 		no_regs	--;
 	}
-	app.valueBuffer[i++] = 0;
+//	app.valueBuffer[i++] = 0;
     break;
 
  	case MB_REG_READ: 
@@ -162,14 +208,46 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 
 //	DigitDisplay_updateBufferPartial(app.valueBuffer, 0, NO_DIGITS);
 
-		MMD_clearSegment(0);
-		mmdConfig.startAddress = 0;
-		mmdConfig.length = MMD_MAX_CHARS;
-		mmdConfig.symbolCount = strlen(app.valueBuffer);
-		mmdConfig.symbolBuffer = app.valueBuffer;
-		mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
-		MMD_configSegment( 0 , &mmdConfig);
+	MMD_clearSegment(0);
+	mmdConfig.startAddress = 0;
+	mmdConfig.length = 3;
+	mmdConfig.symbolCount = 3;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = app.valueBuffer;
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 0 , &mmdConfig);
+/*
+	MMD_clearSegment(1);
+	mmdConfig.startAddress = 3;
+	mmdConfig.length = MMD_MAX_CHARS;
+	mmdConfig.symbolCount = MMD_MAX_CHARS;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = (app.valueBuffer+3);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 1 , &mmdConfig);
 
+	MMD_clearSegment(2);
+	mmdConfig.startAddress = 13;
+	mmdConfig.length = 8;
+	mmdConfig.symbolCount = 8;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = (app.valueBuffer+13);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 2 , &mmdConfig);
+
+	MMD_clearSegment(3);
+	mmdConfig.startAddress = 21;
+	mmdConfig.length = 7;
+	mmdConfig.symbolCount = 7;//strlen(app.valueBuffer);
+	mmdConfig.symbolBuffer = (app.valueBuffer+21);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 3 , &mmdConfig);
+
+	MMD_clearSegment(4);
+	mmdConfig.startAddress = 28;
+	mmdConfig.length = 5;
+	mmdConfig.symbolCount = 5;
+	mmdConfig.symbolBuffer = (app.valueBuffer+28);
+	mmdConfig.scrollSpeed = 0;//SCROLL_SPEED_LOW;
+	MMD_configSegment( 4 , &mmdConfig);
+*/
 
 	return eStatus;
   }
